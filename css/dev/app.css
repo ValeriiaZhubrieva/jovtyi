@@ -92,7 +92,7 @@ body {
   color: var(--text-color);
   font-family: var(--font-family);
   font-size: 16px;
-  background-image: url("../assets/img/pattern-1920-1920-cropp.webp");
+  background-image: url("../assets/img/pattern-1920-1920-cropp.svg");
   background-color: var(--bg-color);
   background-repeat: repeat;
   background-position: center;
@@ -1249,7 +1249,7 @@ body {
   padding-right: 15px;
   padding-bottom: 30px;
   background-color: var(--bg-color);
-  background-image: url("../assets/img/pattern-1920-1920-cropp.webp");
+  background-image: url("../assets/img/pattern-1920-1920-cropp.svg");
   background-repeat: repeat;
   background-position: center;
   background-size: contain;
@@ -3060,7 +3060,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     left: -100%;
     overflow: auto;
     background-color: var(--bg-color);
-    background-image: url("../assets/img/pattern-1920-1920-cropp.webp");
+    background-image: url("../assets/img/pattern-1920-1920-cropp.svg");
     background-repeat: repeat;
     background-position: center;
     background-size: contain;
@@ -3116,7 +3116,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     flex-direction: column;
     gap: 20px;
     background-color: var(--bg-color);
-    background-image: url("../assets/img/pattern-1920-1920-cropp.webp");
+    background-image: url("../assets/img/pattern-1920-1920-cropp.svg");
     background-repeat: repeat;
     background-position: center;
     background-size: contain;
@@ -3183,7 +3183,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     gap: 20px;
     padding: 0 15px 50px 15px;
     background-color: var(--bg-color);
-    background-image: url("../assets/img/pattern-1920-1920-cropp.webp");
+    background-image: url("../assets/img/pattern-1920-1920-cropp.svg");
     background-repeat: repeat;
     background-position: center;
     background-size: contain;
