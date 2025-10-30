@@ -1,0 +1,1006 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Home Page</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1761817244576"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1761817244576">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<div class="header__top">
+						<div class="header__top-left">
+							<button type="button" class="header__burger" data-menu="menu" data-menu-click="">
+								<span class="header__burger-icon">
+									<span></span>
+								</span>
+								<span class="header__burger-text">Меню</span>
+							</button>
+						</div>
+						<a href="#" class="header__logo">
+							<img alt="logo" loading="lazy" src="./assets/img/logo.webp">
+						</a>
+						<div class="header__top-right">
+							<div class="header__actions" data-fls-dynamic=".menu__body, 767.98">
+								<button type="button" class="header__action" data-menu="search-block" data-menu-click="">
+									<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M17.7222 16.3814L14.6465 13.3064C15.5786 12.0864 16.0899 10.6066 16.0901 9.04512C16.0901 7.16335 15.357 5.39408 14.0259 4.06349C12.695 2.7329 10.9256 2 9.04323 2C7.16107 2 5.39143 2.7329 4.06056 4.06349C1.31315 6.81056 1.31315 11.2801 4.06056 14.0267C5.39143 15.3576 7.16107 16.0905 9.04323 16.0905C10.6051 16.0903 12.0852 15.5791 13.3054 14.6472L16.3811 17.7222C16.5661 17.9074 16.809 18 17.0516 18C17.2943 18 17.5372 17.9074 17.7222 17.7222C18.0926 17.3521 18.0926 16.7516 17.7222 16.3814ZM5.40162 12.686C3.39374 10.6785 3.39397 7.41197 5.40162 5.40427C6.37431 4.43202 7.66767 3.89636 9.04323 3.89636C10.419 3.89636 11.7122 4.43202 12.6848 5.40427C13.6575 6.37675 14.1933 7.66984 14.1933 9.04512C14.1933 10.4206 13.6575 11.7135 12.6848 12.686C11.7122 13.6584 10.419 14.1941 9.04323 14.1941C7.66767 14.1941 6.37431 13.6584 5.40162 12.686Z" fill="currentColor"></path>
+									</svg>
+								</button>
+								<a href="tel:+380985114688" class="header__action">
+									<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M7.12411 1.60424C7.24688 1.72739 7.35396 1.86523 7.44304 2.01479L8.83525 4.3969C9.16981 4.96877 9.26833 5.65249 9.11045 6.30674C8.95256 6.96099 8.55034 7.53575 7.98693 7.91221L7.49566 8.24087C8.45555 10.0482 9.93181 11.5222 11.742 12.4806L12.0811 11.9829C12.4612 11.4245 13.0378 11.0274 13.6922 10.8734C14.3465 10.7194 15.0291 10.8201 15.5995 11.1549L17.9901 12.5596C18.3605 12.7788 18.6518 13.1078 18.8248 13.5023C18.9978 13.8967 19.0441 14.3377 18.9575 14.7655C18.7962 15.4709 18.4923 16.1393 18.0646 16.7291C17.6369 17.3189 17.0945 17.8176 16.471 18.1943C15.8963 18.564 15.2547 18.8139 14.5856 18.9285C13.9166 19.043 13.2345 19.0198 12.5815 18.8602C9.82347 18.125 7.32033 16.6849 5.31546 14.6799C3.31058 12.6749 1.87221 10.1733 1.1402 7.41836C0.979747 6.76208 0.956742 6.07663 1.07261 5.40442C1.18847 4.73221 1.44074 4.08756 1.81381 3.51036C2.18701 2.89355 2.68123 2.35674 3.26585 1.93316C3.85048 1.50957 4.51307 1.20823 5.21262 1.04778C5.55632 0.973783 5.911 0.985898 6.24468 1.08304C6.57837 1.18018 6.88059 1.35929 7.12411 1.60424ZM8.23205 11.7412C7.24132 10.7529 6.43835 9.59278 5.86045 8.31459C5.7881 8.1544 5.77612 7.97227 5.82667 7.80106C5.87722 7.62985 5.98697 7.48084 6.13612 7.38092L7.17945 6.68365C7.4222 6.52133 7.59553 6.27366 7.66366 5.99174C7.7318 5.70981 7.68955 5.41515 7.54563 5.16856L6.15619 2.78921C6.0931 2.67755 5.99585 2.58945 5.87829 2.53746C5.76072 2.48547 5.62882 2.47224 5.50136 2.49963C5.00051 2.61625 4.52657 2.83398 4.10901 3.13927C3.69146 3.44457 3.33923 3.83089 3.07425 4.27421C2.81067 4.67582 2.6309 5.12505 2.54597 5.59426C2.46105 6.06347 2.47278 6.54274 2.58044 7.00259C3.24663 9.51171 4.5562 11.7902 6.3818 13.6164C8.2074 15.4426 10.4869 16.7545 12.9986 17.4243C13.4547 17.5308 13.93 17.5423 14.3954 17.4583C14.8607 17.3743 15.3062 17.1965 15.7045 16.9358C16.1503 16.6669 16.5392 16.3119 16.8475 15.8922C17.1559 15.4726 17.3775 14.997 17.4989 14.4941C17.5241 14.3668 17.5095 14.2358 17.4571 14.1191C17.4047 14.0023 17.317 13.9054 17.2061 13.8417L14.8162 12.4391C14.5704 12.2948 14.2762 12.2514 13.9942 12.3178C13.7123 12.3842 13.4639 12.5555 13.3002 12.7963L12.592 13.8437C12.4913 13.9918 12.3419 14.1004 12.1706 14.1499C11.9993 14.1995 11.8174 14.1868 11.6576 14.114C10.3812 13.5316 9.22197 12.7286 8.23205 11.7412Z" fill="currentColor"></path>
+									</svg>
+								</a>
+								<a href="#" class="header__action">
+									<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M6.66667 5.18182V3.45455C6.66667 1.54666 8.15905 3.8147e-06 10 3.8147e-06C11.841 3.8147e-06 13.3333 1.54666 13.3333 3.45455V5.18182H20V19H0V5.18182H6.66667ZM11.6667 3.45455V5.18182H8.33333V3.45455C8.33333 2.50061 9.07953 1.72728 10 1.72728C10.9205 1.72728 11.6667 2.50061 11.6667 3.45455ZM13.3333 10.3636V6.90909H18.3333V17.2727H1.66667V6.90909H6.66667V10.3636H8.33333V6.90909H11.6667V10.3636H13.3333Z" fill="currentColor"></path>
+									</svg>
+									<span class="header__action-count">2</span>
+								</a>
+							</div>
+							<div class="header__lang lang-block" data-fls-dynamic=".menu__head, 767.98">
+								<a href="#" class="lang-block__link is-active">UA</a>
+								<a href="#" class="lang-block__link">RU</a>
+							</div>
+							<a href="#" class="header__cart">
+								<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M6.66667 5.18182V3.45455C6.66667 1.54666 8.15905 3.8147e-06 10 3.8147e-06C11.841 3.8147e-06 13.3333 1.54666 13.3333 3.45455V5.18182H20V19H0V5.18182H6.66667ZM11.6667 3.45455V5.18182H8.33333V3.45455C8.33333 2.50061 9.07953 1.72728 10 1.72728C10.9205 1.72728 11.6667 2.50061 11.6667 3.45455ZM13.3333 10.3636V6.90909H18.3333V17.2727H1.66667V6.90909H6.66667V10.3636H8.33333V6.90909H11.6667V10.3636H13.3333Z" fill="currentColor"></path>
+								</svg>
+								<span class="header__cart-count">2</span>
+							</a>
+						</div>
+						<div class="header__menu menu" data-menu-target="menu">
+							<nav class="menu__body">
+								<div class="menu__head">
+									<button type="button" class="menu__close" data-menu-close="">
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.59967 4.99971L9.5 8.90004L8.90004 9.5L5.00029 5.60025L1.10055 9.5L0.500586 8.90004L4.40033 5.00029L0.5 1.09996L1.10055 0.500586L4.99971 4.39975L8.89945 0.5L9.49941 1.09996L5.59967 4.99971Z" fill="currentColor"></path>
+										</svg>
+									</button>
+								</div>
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="#" class="menu__link">Головна</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Магазин</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Про нас</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Доставка і оплата</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Контакти та адреса</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Новини та інформація</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="header__bottom">
+						<button type="button" class="header__catalog" data-menu="catalog" data-menu-click="">
+							<svg width="14" height="9" viewbox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 0H14V1H0V0Z" fill="currentColor"></path>
+								<path d="M0 4H14V5H0V4Z" fill="currentColor"></path>
+								<path d="M0 8H14V9H0V8Z" fill="currentColor"></path>
+							</svg>
+							<span>Каталог</span>
+						</button>
+						<nav class="header__menu-catalog menu-catalog" data-menu-target="catalog">
+							<div class="menu-catalog__head">
+								<button type="button" class="menu-catalog__close" data-menu-close="">
+									<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.59967 4.99971L9.5 8.90004L8.90004 9.5L5.00029 5.60025L1.10055 9.5L0.500586 8.90004L4.40033 5.00029L0.5 1.09996L1.10055 0.500586L4.99971 4.39975L8.89945 0.5L9.49941 1.09996L5.59967 4.99971Z" fill="currentColor"></path>
+									</svg>
+								</button>
+								<a href="#" class="menu-catalog__logo">
+									<img alt="logo" loading="lazy" src="./assets/img/logo.webp">
+								</a>
+							</div>
+							<ul class="menu-catalog__list">
+								<li class="menu-catalog__item">
+									<a href="#" class="menu-catalog__link" data-menu="gold">Золоті вироби</a>
+								</li>
+								<li class="menu-catalog__item">
+									<a href="#" class="menu-catalog__link" data-menu="silver">Срібні вироби</a>
+								</li>
+								<li class="menu-catalog__item">
+									<a href="#" class="menu-catalog__link" data-menu="other">Інше</a>
+								</li>
+							</ul>
+						</nav>
+						<div data-fls-dynamic=".menu__body, 767.98" class="header__socials social">
+							<a href="#" class="social__link">
+								<svg width="24" height="24" target="_blank" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 16C13.0609 16 14.0783 15.5786 14.8284 14.8284C15.5786 14.0783 16 13.0609 16 12C16 10.9391 15.5786 9.92172 14.8284 9.17157C14.0783 8.42143 13.0609 8 12 8C10.9391 8 9.92172 8.42143 9.17157 9.17157C8.42143 9.92172 8 10.9391 8 12C8 13.0609 8.42143 14.0783 9.17157 14.8284C9.92172 15.5786 10.9391 16 12 16Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M3 16V8C3 6.67392 3.52678 5.40215 4.46447 4.46447C5.40215 3.52678 6.67392 3 8 3H16C17.3261 3 18.5979 3.52678 19.5355 4.46447C20.4732 5.40215 21 6.67392 21 8V16C21 17.3261 20.4732 18.5979 19.5355 19.5355C18.5979 20.4732 17.3261 21 16 21H8C6.67392 21 5.40215 20.4732 4.46447 19.5355C3.52678 18.5979 3 17.3261 3 16Z" stroke="currentColor" stroke-width="1.5"></path>
+									<path d="M17.5 6.51002L17.51 6.49902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</a>
+							<a href="#" class="social__link">
+								<svg width="24" height="24" target="_blank" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</a>
+							<a href="https://t.me/Ternopil_RT" target="_blank" class="social__link">
+								<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M21.84 6.05599C21.8836 5.79131 21.8555 5.51977 21.7585 5.26967C21.6615 5.01957 21.4992 4.80006 21.2885 4.634C21.0778 4.46795 20.8265 4.36144 20.5606 4.32555C20.2948 4.28967 20.0242 4.32574 19.777 4.42999L2.67703 11.63C1.48503 12.132 1.42403 13.856 2.67703 14.376C3.91791 14.893 5.1767 15.366 6.45103 15.794C7.61903 16.18 8.89303 16.537 9.91403 16.638C10.193 16.972 10.544 17.294 10.902 17.588C11.449 18.038 12.107 18.501 12.787 18.945C14.149 19.835 15.66 20.686 16.678 21.24C17.895 21.9 19.352 21.14 19.57 19.813L21.84 6.05599ZM4.59403 12.993L19.718 6.62499L17.6 19.465C16.601 18.922 15.162 18.109 13.88 17.271C13.2892 16.8916 12.7187 16.4814 12.171 16.042C12.0247 15.9224 11.8826 15.7977 11.745 15.668L15.706 11.708C15.8937 11.5205 15.9991 11.2661 15.9992 11.0008C15.9993 10.7356 15.894 10.4811 15.7065 10.2935C15.519 10.1059 15.2647 10.0004 14.9994 10.0003C14.7341 10.0002 14.4797 10.1055 14.292 10.293L9.95503 14.63C9.22103 14.536 8.19903 14.264 7.07703 13.894C6.24174 13.6157 5.41411 13.3149 4.59503 12.992L4.59403 12.993Z" fill="currentColor"></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="submenu" data-menu-target="gold">
+					<div class="submenu__head">
+						<button type="button" class="submenu__back" data-menu="catalog" data-menu-click="">
+							<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M-7.15493e-08 6L6.27123 12L7.34551 10.8771L3.05975 6.77693L12 6.77693L12 5.22307L3.05975 5.22307L7.34551 1.12291L6.27123 -6.83149e-08L-7.15493e-08 6Z" fill="#898989"></path>
+							</svg>
+							<span>Назад</span>
+						</button>
+						<button type="button" class="submenu__close" data-menu-close="">
+							<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.59967 4.99971L9.5 8.90004L8.90004 9.5L5.00029 5.60025L1.10055 9.5L0.500586 8.90004L4.40033 5.00029L0.5 1.09996L1.10055 0.500586L4.99971 4.39975L8.89945 0.5L9.49941 1.09996L5.59967 4.99971Z" fill="currentColor"></path>
+							</svg>
+						</button>
+					</div>
+					<ul class="submenu__list">
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-3.webp">
+								</figure>
+								<span>Браслети</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-23.webp">
+								</figure>
+								<span>Брошки</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-26.webp">
+								</figure>
+								<span>Запонки, затискачі для краваток</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-4.webp">
+								</figure>
+								<span>Каблучки</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-21.webp">
+								</figure>
+								<span>Кольє</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-28.webp">
+								</figure>
+								<span>Ланцюги</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-29.webp">
+								</figure>
+								<span>Ладанки</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-30.webp">
+								</figure>
+								<span>Монети</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-19.webp">
+								</figure>
+								<span>Підвіси</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-10.webp">
+								</figure>
+								<span>Сережки</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-31.webp">
+								</figure>
+								<span>Шпильки</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="submenu" data-menu-target="silver">
+					<div class="submenu__head">
+						<button type="button" class="submenu__back" data-menu="catalog" data-menu-click="">
+							<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M-7.15493e-08 6L6.27123 12L7.34551 10.8771L3.05975 6.77693L12 6.77693L12 5.22307L3.05975 5.22307L7.34551 1.12291L6.27123 -6.83149e-08L-7.15493e-08 6Z" fill="#898989"></path>
+							</svg>
+							<span>Назад</span>
+						</button>
+						<button type="button" class="submenu__close" data-menu-close="">
+							<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.59967 4.99971L9.5 8.90004L8.90004 9.5L5.00029 5.60025L1.10055 9.5L0.500586 8.90004L4.40033 5.00029L0.5 1.09996L1.10055 0.500586L4.99971 4.39975L8.89945 0.5L9.49941 1.09996L5.59967 4.99971Z" fill="currentColor"></path>
+							</svg>
+						</button>
+					</div>
+					<ul class="submenu__list">
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-32.webp">
+								</figure>
+								<span>Браслети</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-23.webp">
+								</figure>
+								<span>Брошки</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-27.webp">
+								</figure>
+								<span>Запонки, затискачі для краваток</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-2.webp">
+								</figure>
+								<span>Каблучки</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-22.webp">
+								</figure>
+								<span>Кольє</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-33.webp">
+								</figure>
+								<span>Ланцюги</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-29.webp">
+								</figure>
+								<span>Ладанки</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-34.webp">
+								</figure>
+								<span>Монети</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-20.webp">
+								</figure>
+								<span>Підвіски</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-35.webp">
+								</figure>
+								<span>Сережки</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-36.webp">
+								</figure>
+								<span>Шпилька</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-25.webp">
+								</figure>
+								<span>Столове срібло</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="submenu" data-menu-target="other">
+					<div class="submenu__head">
+						<button type="button" class="submenu__back" data-menu="catalog" data-menu-click="">
+							<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M-7.15493e-08 6L6.27123 12L7.34551 10.8771L3.05975 6.77693L12 6.77693L12 5.22307L3.05975 5.22307L7.34551 1.12291L6.27123 -6.83149e-08L-7.15493e-08 6Z" fill="#898989"></path>
+							</svg>
+							<span>Назад</span>
+						</button>
+						<button type="button" class="submenu__close" data-menu-close="">
+							<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.59967 4.99971L9.5 8.90004L8.90004 9.5L5.00029 5.60025L1.10055 9.5L0.500586 8.90004L4.40033 5.00029L0.5 1.09996L1.10055 0.500586L4.99971 4.39975L8.89945 0.5L9.49941 1.09996L5.59967 4.99971Z" fill="currentColor"></path>
+							</svg>
+						</button>
+					</div>
+					<ul class="submenu__list">
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-34.webp">
+								</figure>
+								<span>Монети</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-37.webp">
+								</figure>
+								<span>Медалі</span>
+							</a>
+						</li>
+						<li class="submenu__item">
+							<a href="#" class="submenu__link">
+								<figure class="submenu__link-icon">
+									<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-12.webp">
+								</figure>
+								<span>Iнше</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="search-block" data-menu-target="search-block">
+					<div class="search-block__container">
+						<form class="search-block__field">
+							<input autocomplete="off" type="text" name="search" placeholder="Пошук..." class="search-block__input">
+							<button type="submit" class="search-block__button button-empty">
+								<span>Знайти</span>
+								<svg width="21" height="14" viewbox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.9999 0.999935L19 7L12.9999 13.0001M17.9999 6.99994H-0.00012207" stroke="currentColor" stroke-width="2"></path>
+								</svg>
+							</button>
+							<button type="button" class="search-block__close" data-menu-close="">
+								<svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13 1L1 13M1 1L13 13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</button>
+						</form>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<section class="hero">
+					<div class="hero__container">
+						<div data-fls-slider="" class="hero__slider swiper">
+							<div class="hero__wrapper swiper-wrapper">
+								<a href="#" class="hero__slide swiper-slide">
+									<picture>
+										<source srcset="./assets/img/hero/image-1-mob.webp" media="(max-width: 767.98px)">
+										<img alt="Image" loading="lazy" src="./assets/img/hero/image-1.webp">
+									</picture>
+								</a>
+								<a href="#" class="hero__slide swiper-slide">
+									<picture>
+										<source srcset="./assets/img/hero/image-2-mob.webp" media="(max-width: 767.98px)">
+										<img alt="Image" loading="lazy" src="./assets/img/hero/image-2.webp">
+									</picture>
+								</a>
+								<a href="#" class="hero__slide swiper-slide">
+									<picture>
+										<source srcset="./assets/img/hero/image-3-mob.webp" media="(max-width: 767.98px)">
+										<img alt="Image" loading="lazy" src="./assets/img/hero/image-3.webp">
+									</picture>
+								</a>
+							</div>
+							<div class="swiper-pagination"></div>
+							<div class="hero__navigation">
+								<button type="button" class="swiper-button-prev">
+									<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10 16L3 9L10 2" stroke="currentColor" stroke-width="3"></path>
+									</svg>
+								</button>
+								<button type="button" class="swiper-button-next">
+									<svg width="11" height="18" viewbox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.5 2L8.5 9L1.5 16" stroke="currentColor" stroke-width="3"></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="proposals">
+					<div class="proposals__container">
+						<div class="proposals__head">
+							<h2 class="proposals__title title title--h2 lines-decor lines-decor--right">Нові надходження</h2>
+							<div class="proposals__navigation">
+								<button type="button" class="swiper-button-prev">
+									<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10 16L3 9L10 2" stroke="currentColor" stroke-width="3"></path>
+									</svg>
+								</button>
+								<div class="swiper-pagination"></div>
+								<button type="button" class="swiper-button-next">
+									<svg width="11" height="18" viewbox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.5 2L8.5 9L1.5 16" stroke="currentColor" stroke-width="3"></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div data-fls-slider="" class="proposals__slider swiper">
+							<div class="proposals__wrapper swiper-wrapper">
+								<div class="product-card swiper-slide">
+									<div class="product-card__badges">
+										<div class="product-card__badge">-15%</div>
+										<div class="product-card__badge">Новинка</div>
+									</div>
+									<a href="#" class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-1.webp">
+									</a>
+									<a href="#" class="product-card__title">Золота каблучка - "Чарівний кошик"</a>
+									<div class="product-card__bottom">
+										<div class="product-card__prices">
+											<div class="product-card__price">4500 грн</div>
+											<div class="product-card__oldprice">5800 грн</div>
+										</div>
+										<button type="button" class="product-card__buy">
+											<svg width="21" height="20" viewbox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M7.16667 5.18182V3.45455C7.16667 1.54665 8.65905 0 10.5 0C12.341 0 13.8333 1.54665 13.8333 3.45455V5.18182H20.5V19H0.5V5.18182H7.16667ZM12.1667 3.45455V5.18182H8.83333V3.45455C8.83333 2.50061 9.57953 1.72727 10.5 1.72727C11.4205 1.72727 12.1667 2.50061 12.1667 3.45455ZM13.8333 10.3636V6.90909H18.8333V17.2727H2.16667V6.90909H7.16667V10.3636H8.83333V6.90909H12.1667V10.3636H13.8333Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="product-card swiper-slide">
+									<div class="product-card__badges">
+										<div class="product-card__badge">Новинка</div>
+									</div>
+									<a href="#" class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-2.webp">
+									</a>
+									<a href="#" class="product-card__title">Золота каблучка - "Стежка до світла"</a>
+									<div class="product-card__bottom">
+										<div class="product-card__prices">
+											<div class="product-card__price">14 500 грн</div>
+										</div>
+										<button type="button" class="product-card__buy">
+											<svg width="21" height="20" viewbox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M7.16667 5.18182V3.45455C7.16667 1.54665 8.65905 0 10.5 0C12.341 0 13.8333 1.54665 13.8333 3.45455V5.18182H20.5V19H0.5V5.18182H7.16667ZM12.1667 3.45455V5.18182H8.83333V3.45455C8.83333 2.50061 9.57953 1.72727 10.5 1.72727C11.4205 1.72727 12.1667 2.50061 12.1667 3.45455ZM13.8333 10.3636V6.90909H18.8333V17.2727H2.16667V6.90909H7.16667V10.3636H8.83333V6.90909H12.1667V10.3636H13.8333Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="product-card swiper-slide">
+									<div class="product-card__badges">
+										<div class="product-card__badge">-15%</div>
+										<div class="product-card__badge">Новинка</div>
+									</div>
+									<a href="#" class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-3.webp">
+									</a>
+									<a href="#" class="product-card__title">Золота каблучка - "Тріо кохання"</a>
+									<div class="product-card__bottom">
+										<div class="product-card__prices">
+											<div class="product-card__price">4500 грн</div>
+											<div class="product-card__oldprice">5800 грн</div>
+										</div>
+										<button type="button" class="product-card__buy">
+											<svg width="21" height="20" viewbox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M7.16667 5.18182V3.45455C7.16667 1.54665 8.65905 0 10.5 0C12.341 0 13.8333 1.54665 13.8333 3.45455V5.18182H20.5V19H0.5V5.18182H7.16667ZM12.1667 3.45455V5.18182H8.83333V3.45455C8.83333 2.50061 9.57953 1.72727 10.5 1.72727C11.4205 1.72727 12.1667 2.50061 12.1667 3.45455ZM13.8333 10.3636V6.90909H18.8333V17.2727H2.16667V6.90909H7.16667V10.3636H8.83333V6.90909H12.1667V10.3636H13.8333Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="product-card swiper-slide">
+									<div class="product-card__badges">
+										<div class="product-card__badge">Новинка</div>
+									</div>
+									<a href="#" class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-4.webp">
+									</a>
+									<a href="#" class="product-card__title">Золота каблучка - "Стежка зірок"</a>
+									<div class="product-card__bottom">
+										<div class="product-card__prices">
+											<div class="product-card__price">2500 грн</div>
+										</div>
+										<button type="button" class="product-card__buy">
+											<svg width="21" height="20" viewbox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M7.16667 5.18182V3.45455C7.16667 1.54665 8.65905 0 10.5 0C12.341 0 13.8333 1.54665 13.8333 3.45455V5.18182H20.5V19H0.5V5.18182H7.16667ZM12.1667 3.45455V5.18182H8.83333V3.45455C8.83333 2.50061 9.57953 1.72727 10.5 1.72727C11.4205 1.72727 12.1667 2.50061 12.1667 3.45455ZM13.8333 10.3636V6.90909H18.8333V17.2727H2.16667V6.90909H7.16667V10.3636H8.83333V6.90909H12.1667V10.3636H13.8333Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="product-card swiper-slide">
+									<div class="product-card__badges">
+										<div class="product-card__badge">Новинка</div>
+									</div>
+									<a href="#" class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-5.webp">
+									</a>
+									<a href="#" class="product-card__title">Золотий перстень - "Звабливість"</a>
+									<div class="product-card__bottom">
+										<div class="product-card__prices">
+											<div class="product-card__price">5500 грн</div>
+										</div>
+										<button type="button" class="product-card__buy">
+											<svg width="21" height="20" viewbox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M7.16667 5.18182V3.45455C7.16667 1.54665 8.65905 0 10.5 0C12.341 0 13.8333 1.54665 13.8333 3.45455V5.18182H20.5V19H0.5V5.18182H7.16667ZM12.1667 3.45455V5.18182H8.83333V3.45455C8.83333 2.50061 9.57953 1.72727 10.5 1.72727C11.4205 1.72727 12.1667 2.50061 12.1667 3.45455ZM13.8333 10.3636V6.90909H18.8333V17.2727H2.16667V6.90909H7.16667V10.3636H8.83333V6.90909H12.1667V10.3636H13.8333Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="product-card swiper-slide">
+									<div class="product-card__badges">
+										<div class="product-card__badge">Новинка</div>
+									</div>
+									<a href="#" class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-6.webp">
+									</a>
+									<a href="#" class="product-card__title">Золота каблучка - "Сузір'я кохання"</a>
+									<div class="product-card__bottom">
+										<div class="product-card__prices">
+											<div class="product-card__price">9500 грн</div>
+										</div>
+										<button type="button" class="product-card__buy">
+											<svg width="21" height="20" viewbox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M7.16667 5.18182V3.45455C7.16667 1.54665 8.65905 0 10.5 0C12.341 0 13.8333 1.54665 13.8333 3.45455V5.18182H20.5V19H0.5V5.18182H7.16667ZM12.1667 3.45455V5.18182H8.83333V3.45455C8.83333 2.50061 9.57953 1.72727 10.5 1.72727C11.4205 1.72727 12.1667 2.50061 12.1667 3.45455ZM13.8333 10.3636V6.90909H18.8333V17.2727H2.16667V6.90909H7.16667V10.3636H8.83333V6.90909H12.1667V10.3636H13.8333Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="product-card swiper-slide">
+									<div class="product-card__badges">
+										<div class="product-card__badge">Новинка</div>
+									</div>
+									<a href="#" class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-7.webp">
+									</a>
+									<a href="#" class="product-card__title">Печатка з червоного золота</a>
+									<div class="product-card__bottom">
+										<div class="product-card__prices">
+											<div class="product-card__price">9500 грн</div>
+										</div>
+										<button type="button" class="product-card__buy">
+											<svg width="21" height="20" viewbox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M7.16667 5.18182V3.45455C7.16667 1.54665 8.65905 0 10.5 0C12.341 0 13.8333 1.54665 13.8333 3.45455V5.18182H20.5V19H0.5V5.18182H7.16667ZM12.1667 3.45455V5.18182H8.83333V3.45455C8.83333 2.50061 9.57953 1.72727 10.5 1.72727C11.4205 1.72727 12.1667 2.50061 12.1667 3.45455ZM13.8333 10.3636V6.90909H18.8333V17.2727H2.16667V6.90909H7.16667V10.3636H8.83333V6.90909H12.1667V10.3636H13.8333Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="proposals__all button-empty">Усі товари</a>
+					</div>
+				</section>
+				<section class="proposals">
+					<div class="proposals__container">
+						<div class="proposals__head">
+							<h2 class="proposals__title title title--h2 lines-decor lines-decor--right">Розпродаж</h2>
+							<div class="proposals__navigation">
+								<button type="button" class="swiper-button-prev">
+									<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10 16L3 9L10 2" stroke="currentColor" stroke-width="3"></path>
+									</svg>
+								</button>
+								<div class="swiper-pagination"></div>
+								<button type="button" class="swiper-button-next">
+									<svg width="11" height="18" viewbox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.5 2L8.5 9L1.5 16" stroke="currentColor" stroke-width="3"></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div data-fls-slider="" class="proposals__slider swiper">
+							<div class="proposals__wrapper swiper-wrapper">
+								<div class="product-card swiper-slide">
+									<div class="product-card__badges">
+										<div class="product-card__badge">-15%</div>
+										<div class="product-card__badge">Новинка</div>
+									</div>
+									<a href="#" class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-1.webp">
+									</a>
+									<a href="#" class="product-card__title">Золота каблучка - "Чарівний кошик"</a>
+									<div class="product-card__bottom">
+										<div class="product-card__prices">
+											<div class="product-card__price">4500 грн</div>
+											<div class="product-card__oldprice">5800 грн</div>
+										</div>
+										<button type="button" class="product-card__buy">
+											<svg width="21" height="20" viewbox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M7.16667 5.18182V3.45455C7.16667 1.54665 8.65905 0 10.5 0C12.341 0 13.8333 1.54665 13.8333 3.45455V5.18182H20.5V19H0.5V5.18182H7.16667ZM12.1667 3.45455V5.18182H8.83333V3.45455C8.83333 2.50061 9.57953 1.72727 10.5 1.72727C11.4205 1.72727 12.1667 2.50061 12.1667 3.45455ZM13.8333 10.3636V6.90909H18.8333V17.2727H2.16667V6.90909H7.16667V10.3636H8.83333V6.90909H12.1667V10.3636H13.8333Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="product-card swiper-slide">
+									<div class="product-card__badges">
+										<div class="product-card__badge">Новинка</div>
+									</div>
+									<a href="#" class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-2.webp">
+									</a>
+									<a href="#" class="product-card__title">Золота каблучка - "Стежка до світла"</a>
+									<div class="product-card__bottom">
+										<div class="product-card__prices">
+											<div class="product-card__price">14 500 грн</div>
+										</div>
+										<button type="button" class="product-card__buy">
+											<svg width="21" height="20" viewbox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M7.16667 5.18182V3.45455C7.16667 1.54665 8.65905 0 10.5 0C12.341 0 13.8333 1.54665 13.8333 3.45455V5.18182H20.5V19H0.5V5.18182H7.16667ZM12.1667 3.45455V5.18182H8.83333V3.45455C8.83333 2.50061 9.57953 1.72727 10.5 1.72727C11.4205 1.72727 12.1667 2.50061 12.1667 3.45455ZM13.8333 10.3636V6.90909H18.8333V17.2727H2.16667V6.90909H7.16667V10.3636H8.83333V6.90909H12.1667V10.3636H13.8333Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="product-card swiper-slide">
+									<div class="product-card__badges">
+										<div class="product-card__badge">-15%</div>
+										<div class="product-card__badge">Новинка</div>
+									</div>
+									<a href="#" class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-3.webp">
+									</a>
+									<a href="#" class="product-card__title">Золота каблучка - "Тріо кохання"</a>
+									<div class="product-card__bottom">
+										<div class="product-card__prices">
+											<div class="product-card__price">4500 грн</div>
+											<div class="product-card__oldprice">5800 грн</div>
+										</div>
+										<button type="button" class="product-card__buy">
+											<svg width="21" height="20" viewbox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M7.16667 5.18182V3.45455C7.16667 1.54665 8.65905 0 10.5 0C12.341 0 13.8333 1.54665 13.8333 3.45455V5.18182H20.5V19H0.5V5.18182H7.16667ZM12.1667 3.45455V5.18182H8.83333V3.45455C8.83333 2.50061 9.57953 1.72727 10.5 1.72727C11.4205 1.72727 12.1667 2.50061 12.1667 3.45455ZM13.8333 10.3636V6.90909H18.8333V17.2727H2.16667V6.90909H7.16667V10.3636H8.83333V6.90909H12.1667V10.3636H13.8333Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="product-card swiper-slide">
+									<div class="product-card__badges">
+										<div class="product-card__badge">Новинка</div>
+									</div>
+									<a href="#" class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-4.webp">
+									</a>
+									<a href="#" class="product-card__title">Золота каблучка - "Стежка зірок"</a>
+									<div class="product-card__bottom">
+										<div class="product-card__prices">
+											<div class="product-card__price">2500 грн</div>
+										</div>
+										<button type="button" class="product-card__buy">
+											<svg width="21" height="20" viewbox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M7.16667 5.18182V3.45455C7.16667 1.54665 8.65905 0 10.5 0C12.341 0 13.8333 1.54665 13.8333 3.45455V5.18182H20.5V19H0.5V5.18182H7.16667ZM12.1667 3.45455V5.18182H8.83333V3.45455C8.83333 2.50061 9.57953 1.72727 10.5 1.72727C11.4205 1.72727 12.1667 2.50061 12.1667 3.45455ZM13.8333 10.3636V6.90909H18.8333V17.2727H2.16667V6.90909H7.16667V10.3636H8.83333V6.90909H12.1667V10.3636H13.8333Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="product-card swiper-slide">
+									<div class="product-card__badges">
+										<div class="product-card__badge">Новинка</div>
+									</div>
+									<a href="#" class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-5.webp">
+									</a>
+									<a href="#" class="product-card__title">Золотий перстень - "Звабливість"</a>
+									<div class="product-card__bottom">
+										<div class="product-card__prices">
+											<div class="product-card__price">5500 грн</div>
+										</div>
+										<button type="button" class="product-card__buy">
+											<svg width="21" height="20" viewbox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M7.16667 5.18182V3.45455C7.16667 1.54665 8.65905 0 10.5 0C12.341 0 13.8333 1.54665 13.8333 3.45455V5.18182H20.5V19H0.5V5.18182H7.16667ZM12.1667 3.45455V5.18182H8.83333V3.45455C8.83333 2.50061 9.57953 1.72727 10.5 1.72727C11.4205 1.72727 12.1667 2.50061 12.1667 3.45455ZM13.8333 10.3636V6.90909H18.8333V17.2727H2.16667V6.90909H7.16667V10.3636H8.83333V6.90909H12.1667V10.3636H13.8333Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="product-card swiper-slide">
+									<div class="product-card__badges">
+										<div class="product-card__badge">Новинка</div>
+									</div>
+									<a href="#" class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-6.webp">
+									</a>
+									<a href="#" class="product-card__title">Золота каблучка - "Сузір'я кохання"</a>
+									<div class="product-card__bottom">
+										<div class="product-card__prices">
+											<div class="product-card__price">9500 грн</div>
+										</div>
+										<button type="button" class="product-card__buy">
+											<svg width="21" height="20" viewbox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M7.16667 5.18182V3.45455C7.16667 1.54665 8.65905 0 10.5 0C12.341 0 13.8333 1.54665 13.8333 3.45455V5.18182H20.5V19H0.5V5.18182H7.16667ZM12.1667 3.45455V5.18182H8.83333V3.45455C8.83333 2.50061 9.57953 1.72727 10.5 1.72727C11.4205 1.72727 12.1667 2.50061 12.1667 3.45455ZM13.8333 10.3636V6.90909H18.8333V17.2727H2.16667V6.90909H7.16667V10.3636H8.83333V6.90909H12.1667V10.3636H13.8333Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="product-card swiper-slide">
+									<div class="product-card__badges">
+										<div class="product-card__badge">Новинка</div>
+									</div>
+									<a href="#" class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-7.webp">
+									</a>
+									<a href="#" class="product-card__title">Печатка з червоного золота</a>
+									<div class="product-card__bottom">
+										<div class="product-card__prices">
+											<div class="product-card__price">9500 грн</div>
+										</div>
+										<button type="button" class="product-card__buy">
+											<svg width="21" height="20" viewbox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M7.16667 5.18182V3.45455C7.16667 1.54665 8.65905 0 10.5 0C12.341 0 13.8333 1.54665 13.8333 3.45455V5.18182H20.5V19H0.5V5.18182H7.16667ZM12.1667 3.45455V5.18182H8.83333V3.45455C8.83333 2.50061 9.57953 1.72727 10.5 1.72727C11.4205 1.72727 12.1667 2.50061 12.1667 3.45455ZM13.8333 10.3636V6.90909H18.8333V17.2727H2.16667V6.90909H7.16667V10.3636H8.83333V6.90909H12.1667V10.3636H13.8333Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="proposals__all button-empty">Усі товари</a>
+					</div>
+				</section>
+				<section class="popular-cateories">
+					<div class="popular-cateories__container">
+						<div class="popular-cateories__body">
+							<h2 class="popular-cateories__title title title--h2">Популярні категорії</h2>
+							<div data-fls-slider="" class="popular-cateories__slider swiper">
+								<div class="popular-cateories__arrows" data-swiper-lock="">
+									<button type="button" class="swiper-button-prev">
+										<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M10 16L3 9L10 2" stroke="currentColor" stroke-width="3"></path>
+										</svg>
+									</button>
+									<button type="button" class="swiper-button-next">
+										<svg width="11" height="18" viewbox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.5 2L8.5 9L1.5 16" stroke="currentColor" stroke-width="3"></path>
+										</svg>
+									</button>
+								</div>
+								<div class="popular-cateories__wrapper swiper-wrapper">
+									<a href="#" class="popular-cateories__item swiper-slide">
+										<figure class="popular-cateories__item-img">
+											<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-1.webp">
+										</figure>
+										<div class="popular-cateories__item-title">Каблучки</div>
+									</a>
+									<a href="#" class="popular-cateories__item swiper-slide">
+										<figure class="popular-cateories__item-img">
+											<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-28.webp">
+										</figure>
+										<div class="popular-cateories__item-title">Ланцюги</div>
+									</a>
+									<a href="#" class="popular-cateories__item swiper-slide">
+										<figure class="popular-cateories__item-img">
+											<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-10.webp">
+										</figure>
+										<div class="popular-cateories__item-title">Сережки</div>
+									</a>
+									<a href="#" class="popular-cateories__item swiper-slide">
+										<figure class="popular-cateories__item-img">
+											<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-30.webp">
+										</figure>
+										<div class="popular-cateories__item-title">Монети</div>
+									</a>
+									<a href="#" class="popular-cateories__item swiper-slide">
+										<figure class="popular-cateories__item-img">
+											<img alt="Image" loading="lazy" src="./assets/img/menu-catalog/image-32.webp">
+										</figure>
+										<div class="popular-cateories__item-title">Браслети</div>
+									</a>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="latestnews">
+					<div class="latestnews__container">
+						<div class="latestnews__head">
+							<h2 class="latestnews__title title title--h2 lines-decor lines-decor--right">Останні новини</h2>
+							<div class="latestnews__navigation" data-swiper-lock="">
+								<button type="button" class="swiper-button-prev">
+									<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10 16L3 9L10 2" stroke="currentColor" stroke-width="3"></path>
+									</svg>
+								</button>
+								<div class="swiper-pagination"></div>
+								<button type="button" class="swiper-button-next">
+									<svg width="11" height="18" viewbox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.5 2L8.5 9L1.5 16" stroke="currentColor" stroke-width="3"></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div data-fls-slider="" class="latestnews__slider swiper">
+							<div class="latestnews__wrapper swiper-wrapper">
+								<article class="news-card swiper-slide">
+									<figure class="news-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/news/image-1.webp">
+									</figure>
+									<div class="news-card__body">
+										<time class="news-card__date">14 травня 2025</time>
+										<a href="#" class="news-card__title">Лазурит: магічні властивості та їхній вплив на ваше життя</a>
+									</div>
+								</article>
+								<article class="news-card swiper-slide">
+									<figure class="news-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/news/image-2.webp">
+									</figure>
+									<div class="news-card__body">
+										<time class="news-card__date">09 квітня 2025</time>
+										<a href="#" class="news-card__title">Як обрати тенісний браслет: поради та рекомендації</a>
+									</div>
+								</article>
+								<article class="news-card swiper-slide">
+									<figure class="news-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/news/image-3.webp">
+									</figure>
+									<div class="news-card__body">
+										<time class="news-card__date">25 квітня 2025</time>
+										<a href="#" class="news-card__title">Заміж у високосний рік: традиції та прикмети</a>
+									</div>
+								</article>
+								<article class="news-card swiper-slide">
+									<figure class="news-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/news/image-4.webp">
+									</figure>
+									<div class="news-card__body">
+										<time class="news-card__date">13 лютого 2025</time>
+										<a href="#" class="news-card__title">Як обрати перші золоті сережки для дівчинки: поради для батьків</a>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__container">
+					<div class="footer__body">
+						<a href="#" class="footer__logo">
+							<img alt="Image" loading="lazy" src="./assets/img/jovtyi_logo_1.webp">
+						</a>
+						<nav class="footer__menu">
+							<div class="footer__menu-col">
+								<div class="footer__menu-title">Корисні сторінки</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Головна</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Магазин</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Про нас</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Доставка і оплата</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Контакти та адреса</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Новини та інформація</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__menu-col">
+								<div class="footer__menu-title">Популярні категорії</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Каблучки</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Сережки</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Ланцюги</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Монети</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Браслети</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Запонки, затискачі для краваток</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__menu-col">
+								<div class="footer__menu-title">Контакти</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item">
+										<a href="tel:+380985114688" class="footer__menu-link">+38 (098) 511-46-88</a>
+									</li>
+								</ul>
+								<div class="footer__menu-socials social">
+									<a href="#" class="social__link">
+										<svg width="24" height="24" target="_blank" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M12 16C13.0609 16 14.0783 15.5786 14.8284 14.8284C15.5786 14.0783 16 13.0609 16 12C16 10.9391 15.5786 9.92172 14.8284 9.17157C14.0783 8.42143 13.0609 8 12 8C10.9391 8 9.92172 8.42143 9.17157 9.17157C8.42143 9.92172 8 10.9391 8 12C8 13.0609 8.42143 14.0783 9.17157 14.8284C9.92172 15.5786 10.9391 16 12 16Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M3 16V8C3 6.67392 3.52678 5.40215 4.46447 4.46447C5.40215 3.52678 6.67392 3 8 3H16C17.3261 3 18.5979 3.52678 19.5355 4.46447C20.4732 5.40215 21 6.67392 21 8V16C21 17.3261 20.4732 18.5979 19.5355 19.5355C18.5979 20.4732 17.3261 21 16 21H8C6.67392 21 5.40215 20.4732 4.46447 19.5355C3.52678 18.5979 3 17.3261 3 16Z" stroke="currentColor" stroke-width="1.5"></path>
+											<path d="M17.5 6.51002L17.51 6.49902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</a>
+									<a href="#" class="social__link">
+										<svg width="24" height="24" target="_blank" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</a>
+									<a href="https://t.me/Ternopil_RT" target="_blank" class="social__link">
+										<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M21.84 6.05599C21.8836 5.79131 21.8555 5.51977 21.7585 5.26967C21.6615 5.01957 21.4992 4.80006 21.2885 4.634C21.0778 4.46795 20.8265 4.36144 20.5606 4.32555C20.2948 4.28967 20.0242 4.32574 19.777 4.42999L2.67703 11.63C1.48503 12.132 1.42403 13.856 2.67703 14.376C3.91791 14.893 5.1767 15.366 6.45103 15.794C7.61903 16.18 8.89303 16.537 9.91403 16.638C10.193 16.972 10.544 17.294 10.902 17.588C11.449 18.038 12.107 18.501 12.787 18.945C14.149 19.835 15.66 20.686 16.678 21.24C17.895 21.9 19.352 21.14 19.57 19.813L21.84 6.05599ZM4.59403 12.993L19.718 6.62499L17.6 19.465C16.601 18.922 15.162 18.109 13.88 17.271C13.2892 16.8916 12.7187 16.4814 12.171 16.042C12.0247 15.9224 11.8826 15.7977 11.745 15.668L15.706 11.708C15.8937 11.5205 15.9991 11.2661 15.9992 11.0008C15.9993 10.7356 15.894 10.4811 15.7065 10.2935C15.519 10.1059 15.2647 10.0004 14.9994 10.0003C14.7341 10.0002 14.4797 10.1055 14.292 10.293L9.95503 14.63C9.22103 14.536 8.19903 14.264 7.07703 13.894C6.24174 13.6157 5.41411 13.3149 4.59503 12.992L4.59403 12.993Z" fill="currentColor"></path>
+										</svg>
+									</a>
+								</div>
+								<div class="footer__menu-title">Графік роботи</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item">Понеділок — П’ятниця: 8:00–20:00</li>
+									<li class="footer__menu-item">Субота: 8:00–20:00</li>
+									<li class="footer__menu-item">Неділя: 9:00–20:00</li>
+								</ul>
+								<div class="footer__menu-title">Адреса</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item">вул. Торговиця 9м, колишня Живова, ТЦ «RICH TOWN», Тернопіль, Україна</li>
+									<li class="footer__menu-item">вул. Вʼячеслава Чорновола, 8, Тернопіль, Україна</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+					<div class="footer__bottom">
+						<div class="footer__copy">© Всі права захищені “Жовтий” 2025</div>
+						<div class="footer__lang lang-block">
+							<a href="#" class="lang-block__link is-active">UA</a>
+							<a href="#" class="lang-block__link">RU</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
